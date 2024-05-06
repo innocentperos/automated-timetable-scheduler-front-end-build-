@@ -1,0 +1,1 @@
+const s=e=>!!e||"Field is required",n=e=>r=>r.length<=e||`Must be less than ${e} characters.`,u=e=>r=>r.length>=e||`Must be more than ${e} characters.`,a=e=>{const r=e.toString(),t=parseInt(r);return isNaN(t)||t.toString()!=r.trim()?"Most be a valid number":!0},i=()=>({maxLen:n,minLen:u,numberOnly:a,required:s});export{s as a,u as b,n as c,a as d,i as u};
